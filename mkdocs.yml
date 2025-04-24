@@ -1,0 +1,40 @@
+site_name: Progression STI2D
+site_url: http://localhost:8000/
+theme:
+  name: material
+  language: fr
+  font:
+    text: Raleway
+    code: Roboto Mono
+  logo: assets/logosti2d.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: green
+      accent: deep purple
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: blue
+      accent: deep orange
+
+nav:
+  - STI2D: index.md
+  - Accueil:
+      - Accueil: accueil.md
+      - Idées et faits importants: faits.md
+      - Citations: citations.md
+      - Implications: implications.md
+  - Première: premiere.md
+  - Terminale: Terminale.md
+  - Ressources: essai.md
+
+markdown_extensions:
+  - markdown.extensions.abbr
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - attr_list
