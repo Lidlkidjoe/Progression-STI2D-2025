@@ -11,5 +11,5 @@
     - [Tableau sciences](https://tableau.ensciences.fr/)
 
         <div style="display: flex; justify-content: center;">
-        <img src="/assets/accueil.png" alt="diagramme stem" style="width: 450px; height: 300px;"/>
+        <img src="/Progression-STI2D-2025/assets/accueil.png" alt="diagramme stem" style="width: 450px; height: 300px;"/>
         </div>

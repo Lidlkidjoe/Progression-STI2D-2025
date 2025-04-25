@@ -15,11 +15,11 @@
     *  **CO7.2 :** Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures et/ou d’observations sur le prototype ou la maquette, interpréter les résultats et qualifier le produit
 
     <div style="display: flex; justify-content: center;">
-    <img src="/assets/unite.png" alt="diagramme stem" style="width: 400px; height: 250px;"/>
+    <img src="/Progression-STI2D-2025/assets/unite.png" alt="diagramme stem" style="width: 400px; height: 250px;"/>
     </div>
 
 
-    <iframe src="/assets/fichiers/maison/unites/0_1 situation declenchante unites 1ere.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/unites/0_1 situation declenchante unites 1ere.pdf" width="100%" height="400px"></iframe>
 
     * Cours unités et grandeurs
     * Td unités et grandeurs
@@ -39,17 +39,17 @@
     * Circuits série/parallèle
     * mesures : tensions/intensités
 
-    <iframe src="/assets/fichiers/maison/panneau/TP_panneau_solaire.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/panneau/TP_panneau_solaire.pdf" width="100%" height="400px"></iframe>
 
-    <iframe src="/assets/fichiers/maison/panneau/Synthèse_électrique.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/panneau/Synthèse_électrique.pdf" width="100%" height="400px"></iframe>
 
     * QCM lois électricité
 
-    <iframe src="/assets/fichiers/maison/panneau/QCM1_electrique.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/panneau/QCM1_electrique.pdf" width="100%" height="400px"></iframe>
 
     <div style="display: flex; justify-content: center; align-items: center; height: auto;">
         <video width="640" height="360" controls>
-            <source src="/assets/fichiers/maison/panneau/Vidéo_5 fonctionnement.mp4" type="video/mp4">
+            <source src="/Progression-STI2D-2025/assets/fichiers/maison/panneau/Vidéo_5 fonctionnement.mp4" type="video/mp4">
             Votre navigateur ne supporte pas l'élément vidéo.
         </video>
     </div>
@@ -63,35 +63,35 @@
 
     * Situation déclenchante
 
-    <iframe src="/assets/fichiers/maison/habitat/1.1 - Situation déclenchante 1.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/1.1 - Situation déclenchante 1.pdf" width="100%" height="400px"></iframe>
 
     * Activité de découverte
 
-    <iframe src="/assets/fichiers/maison/habitat/1.2 - habitat_2020_decouverte_e.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/1.2 - habitat_2020_decouverte_e.pdf" width="100%" height="400px"></iframe>
 
     * Synthèse 
 
-    <iframe src="/assets/fichiers/maison/habitat/1STI_0_fiche élève Synthese.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/1STI_0_fiche élève Synthese.pdf" width="100%" height="400px"></iframe>
 
     * Sources d'énergie 
 
-    <iframe src="/assets/fichiers/maison/habitat/NRJ_fiche1.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/NRJ_fiche1.pdf" width="100%" height="400px"></iframe>
 
     * Exercices 
 
-    <iframe src="/assets/fichiers/maison/habitat/1.3 - TD2_sources_Energie_e.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/1.3 - TD2_sources_Energie_e.pdf" width="100%" height="400px"></iframe>
 
     * Synthèse habitat 
 
-    <iframe src="/assets/fichiers/maison/habitat/Synthese_habitat ecologie_e.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/Synthese_habitat ecologie_e.pdf" width="100%" height="400px"></iframe>
 
     * L'habitat dans l'histoire
 
-    <iframe src="/assets/fichiers/maison/habitat/l-habitat-a-travers-l-histoire.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/l-habitat-a-travers-l-histoire.pdf" width="100%" height="400px"></iframe>
 
     * RE 2020
 
-    <iframe src="/assets/fichiers/maison/habitat/Applications.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/Applications.pdf" width="100%" height="400px"></iframe>
 
 === "SysML"
 
@@ -101,15 +101,15 @@
 
     * Introduction
 
-    <iframe src="/assets/fichiers/maison/panneau/diagramme_reveil_matin.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/panneau/diagramme_reveil_matin.pdf" width="100%" height="400px"></iframe>
 
     * Créativité : décrire un système en SysML
 
-    <iframe src="/assets/fichiers/maison/panneau/TD_SYSML.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/panneau/TD_SYSML.pdf" width="100%" height="400px"></iframe>
 
     * Synthèse SysML
 
-    <iframe src="/assets/fichiers/maison/panneau/SysML_synthèse_e.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/panneau/SysML_synthèse_e.pdf" width="100%" height="400px"></iframe>
 
 === "Transfert thermique"
 
@@ -119,11 +119,11 @@
 
     * Flux thermiques
 
-    <iframe src="/assets/fichiers/maison/habitat/2_Ress.-Les transferts thermiques_e.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/2_Ress.-Les transferts thermiques_e.pdf" width="100%" height="400px"></iframe>
 
     * Bilan énergétique 
 
-    <iframe src="/assets/fichiers/maison/habitat/e15_dpe_avancé.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/habitat/e15_dpe_avancé.pdf" width="100%" height="400px"></iframe>
 
 === "Installation photovoltaïque"
 
@@ -133,23 +133,23 @@
 
     * Généralités photovoltaïque
 
-    <iframe src="/assets/fichiers/maison/photovol/C_photoV_généralités_p.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/photovol/C_photoV_généralités_p.pdf" width="100%" height="400px"></iframe>
 
     * Maquette et simulation 
 
-    <iframe src="/assets/fichiers/maison/photovol/TP1_photoV_e.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/photovol/TP1_photoV_e.pdf" width="100%" height="400px"></iframe>
 
     * Diagramme exigences 
 
-    <iframe src="/assets/fichiers/maison/photovol/PV_exigences.jpg" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/photovol/PV_exigences.jpg" width="100%" height="400px"></iframe>
 
     * Diagramme cas d'utilisation
 
-    <iframe src="/assets/fichiers/maison/photovol/cas utilisation.jpg" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/photovol/cas utilisation.jpg" width="100%" height="400px"></iframe>
 
     * Diagramme contexte
 
-    <iframe src="/assets/fichiers/maison/photovol/contexte_PV.jpg" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/photovol/contexte_PV.jpg" width="100%" height="400px"></iframe>
 
 
 === "Analyse du réel"
@@ -160,23 +160,23 @@
 
     * Protocole de mesure
 
-    <iframe src="/assets/fichiers/maison/reel/4_analyse_existant.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/reel/4_analyse_existant.pdf" width="100%" height="400px"></iframe>
 
     * Plan de la maquette 
 
-    <iframe src="/assets/fichiers/maison/reel/Plan maison.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/reel/Plan maison.pdf" width="100%" height="400px"></iframe>
 
     * Représentations 
 
-    <iframe src="/assets/fichiers/maison/reel/representation - cours -eleve.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/reel/representation - cours -eleve.pdf" width="100%" height="400px"></iframe>
 
     * Exercice 1
 
-    <iframe src="/assets/fichiers/maison/reel/ex1 - vue.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/reel/ex1 - vue.pdf" width="100%" height="400px"></iframe>
 
     * Protocole avancé
 
-    <iframe src="/assets/fichiers/maison/reel/7.0_analyse_existant.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/reel/7.0_analyse_existant.pdf" width="100%" height="400px"></iframe>
 
 
 === "Traqueur solaire"
@@ -187,19 +187,19 @@
 
     * Chaîne d'information
 
-    <iframe src="/assets/fichiers/maison/traqueur/Présentation.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/traqueur/Présentation.pdf" width="100%" height="400px"></iframe>
 
     * Chaîne d'information vierge 
 
-    <iframe src="/assets/fichiers/maison/traqueur/Chaine_info_à_compléter.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/traqueur/Chaine_info_à_compléter.pdf" width="100%" height="400px"></iframe>
 
     * Arduino 
 
-    <iframe src="/assets/fichiers/maison/traqueur/TP1_1_Traitement_Arduino.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/traqueur/TP1_1_Traitement_Arduino.pdf" width="100%" height="400px"></iframe>
 
     * Feu de circulation
 
-    <iframe src="/assets/fichiers/maison/traqueur/TP1_2_feu.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/traqueur/TP1_2_feu.pdf" width="100%" height="400px"></iframe>
 
 === "Analyse du cycle de vie"
 
@@ -209,16 +209,16 @@
 
     * Initiation par le jeu
 
-    <iframe src="/assets/fichiers/maison/acv/jeux carte impact _ substance de réference.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/acv/jeux carte impact _ substance de réference.pdf" width="100%" height="400px"></iframe>
 
     * Résumé de cours 
 
-    <iframe src="/assets/fichiers/maison/acv/résumé cours ACV source BL.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/acv/résumé cours ACV source BL.pdf" width="100%" height="400px"></iframe>
 
     * Cultiver son esprit critique 
 
     <div style="position: relative; width: 560px; height: 315px;">
-    <img src="/assets/monaco.png" alt="Vignette personnalisée" style="width: 100%; height: 100%; cursor: pointer;" onclick="playVideo()">
+    <img src="/Progression-STI2D-2025/assets/monaco.png" alt="Vignette personnalisée" style="width: 100%; height: 100%; cursor: pointer;" onclick="playVideo()">
     <iframe id="youtubePlayer" src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1" style="width: 100%; height: 100%; display: none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <script>
@@ -229,7 +229,7 @@
 
     * ACV canette
 
-    <iframe src="/assets/fichiers/maison/acv/conception canette ACV_e.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/maison/acv/conception canette ACV_e.pdf" width="100%" height="400px"></iframe>
 
 
 ## Bras manipulateur
@@ -241,20 +241,20 @@
     * **CO 5.8 :** Définir à l’aide d’un modeleur numérique, les formes et dimensions d’une pièce d’un produit
 
     <div style="display: flex; justify-content: center;">
-    <img src="/assets/fichiers/bras/cao.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
+    <img src="/Progression-STI2D-2025/assets/fichiers/bras/cao.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
     </div>
 
     * Initiation à la conception assistée par ordinateur
 
-    <iframe src="/assets/fichiers/bras/Initiation Solid Works_1.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/Initiation Solid Works_1.pdf" width="100%" height="400px"></iframe>
 
-     <iframe src="/assets/fichiers/bras/Initiation Solid Works_2.pdf" width="100%" height="400px"></iframe>
+     <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/Initiation Solid Works_2.pdf" width="100%" height="400px"></iframe>
 
      * Exercices CAO
 
-    <iframe src="/assets/fichiers/bras/TP0_2.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TP0_2.pdf" width="100%" height="400px"></iframe>
 
-    <iframe src="/assets/fichiers/bras/exos SW+proj_ortho.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/exos SW+proj_ortho.pdf" width="100%" height="400px"></iframe>
 
 
 === "Expression orale"
@@ -264,12 +264,12 @@
     * **CO4.2:** Décrire le fonctionnement et/ou l’exploitation d’un produit en utilisant l'outil de description le plus pertinent
 
     <div style="display: flex; justify-content: center;">
-    <img src="/assets/fichiers/bras/evolution.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
+    <img src="/Progression-STI2D-2025/assets/fichiers/bras/evolution.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
     </div>
 
     * Histoire de l'automatisation
 
-    <iframe src="/assets/fichiers/bras/0_1 Présentation et situation déclenchante.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/0_1 Présentation et situation déclenchante.pdf" width="100%" height="400px"></iframe>
 
     * Réalisation d'un diaporama pour présenter un sujet
 
@@ -280,13 +280,13 @@
     * **CO5.2 :** Identifier et justifier un problème technique à partir de l’analyse globale d’un produit (approche matière – énergie – information)
 
     <div style="display: flex; justify-content: center;">
-    <img src="/assets/fichiers/bras/bras_manip.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
+    <img src="/Progression-STI2D-2025/assets/fichiers/bras/bras_manip.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
     </div>
 
     * Modification d'une pince 
 
     <div style="display: flex; justify-content: center;">
-    <img src="/assets/fichiers/bras/pince.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
+    <img src="/Progression-STI2D-2025/assets/fichiers/bras/pince.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
     </div>
 
     * Modification d'une pince pour préparer la re-conception du bras manipulateur
@@ -295,11 +295,11 @@
 
     * Document réponse 1
 
-    <iframe src="/assets/fichiers/bras/TP1_document_réponse.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TP1_document_réponse.pdf" width="100%" height="400px"></iframe>
 
     * Document réponse 2
 
-    <iframe src="/assets/fichiers/bras/TP2_document_réponse.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TP2_document_réponse.pdf" width="100%" height="400px"></iframe>
 
 
 === "Unités fonctionnelles"
@@ -308,11 +308,11 @@
 
     * **CO3.2 :** Identifier et caractériser l’agencement matériel et/ou logiciel d’un produit
 
-    <iframe src="/assets/fichiers/bras/unité fonctionnelle_élèves.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/unité fonctionnelle_élèves.pdf" width="100%" height="400px"></iframe>
 
     * Rasoir jetable
 
-    <iframe src="/assets/fichiers/bras/rasoir jetable_élève.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/rasoir jetable_élève.pdf" width="100%" height="400px"></iframe>
 
 
 === "Liaisons mécaniques"
@@ -325,22 +325,22 @@
 
     <div style="display: flex; justify-content: center; align-items: center; height: auto;">
         <video width="640" height="360" controls>
-            <source src="/assets/fichiers/bras/Crash_concord.mp4" type="video/mp4">
+            <source src="/Progression-STI2D-2025/assets/fichiers/bras/Crash_concord.mp4" type="video/mp4">
             Votre navigateur ne supporte pas l'élément vidéo.
         </video>
     </div>
 
     * Introduction liaisons mécaniques
 
-    <iframe src="/assets/fichiers/bras/Liaisons_mécaniques_introduction_e_v2.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/Liaisons_mécaniques_introduction_e_v2.pdf" width="100%" height="400px"></iframe>
 
     * Logiciel pour s'entraîner
 
-    <iframe src="/assets/fichiers/bras/160-notice-schematrice.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/160-notice-schematrice.pdf" width="100%" height="400px"></iframe>
 
     * Exercices
 
-    <iframe src="/assets/fichiers/bras/TP4 schema cinematique.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TP4 schema cinematique.pdf" width="100%" height="400px"></iframe>
 
 
 === "Impact environnemental bras"
@@ -356,26 +356,26 @@
 
     * Diagramme SysML
 
-    <iframe src="/assets/fichiers/bras/1_0 Diagramme SysMl.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/1_0 Diagramme SysMl.pdf" width="100%" height="400px"></iframe>
 
     * Nomenclature
 
-    <iframe src="/assets/fichiers/bras/nomenclature.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/nomenclature.pdf" width="100%" height="400px"></iframe>
 
     * TP Sustainability en html
 
 
     <div style="display: flex; justify-content: center;">
-    <img src="/assets/fichiers/bras/sustainability.png" alt="diagramme stem" style="width: 600px; height: 400px;"/>
+    <img src="/Progression-STI2D-2025/assets/fichiers/bras/sustainability.png" alt="diagramme stem" style="width: 600px; height: 400px;"/>
     </div>
 
     * Document réponse
 
-    <iframe src="/assets/fichiers/bras/TP7document reponse.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TP7document reponse.pdf" width="100%" height="400px"></iframe>
 
     * Programmation du bras manipulateur
 
-    <iframe src="/assets/fichiers/bras/TD_Bras_robot.pdf" width="100%" height="400px"></iframe>
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TD_Bras_robot.pdf" width="100%" height="400px"></iframe>
     
 
     

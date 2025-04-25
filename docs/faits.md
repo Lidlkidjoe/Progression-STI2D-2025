@@ -13,25 +13,25 @@
         * Architecture et construction
 
         <div style="display: flex; justify-content: center;">
-        <img src="/assets/ac.jpg" alt="diagramme stem" style="width: 400px; height: 300px;"/>
+        <img src="/Progression-STI2D-2025/assets/ac.jpg" alt="diagramme stem" style="width: 400px; height: 300px;"/>
         </div>
 
         * Énergies et environnement
 
         <div style="display: flex; justify-content: center;">
-        <img src="/assets/ee.jpg" alt="diagramme stem" style="width: 400px; height: 250px;"/>
+        <img src="/Progression-STI2D-2025/assets/ee.jpg" alt="diagramme stem" style="width: 400px; height: 250px;"/>
         </div>
 
         * Systèmes d’information et numérique
 
         <div style="display: flex; justify-content: center;">
-        <img src="/assets/numerique.jpg" alt="diagramme stem" style="width: 400px; height: 250px;"/>
+        <img src="/Progression-STI2D-2025/assets/numerique.jpg" alt="diagramme stem" style="width: 400px; height: 250px;"/>
         </div>
 
         * Innvation technologique et éco-conception
 
         <div style="display: flex; justify-content: center;">
-        <img src="/assets/itec.jpg" alt="diagramme stem" style="width: 400px; height: 300px;"/>
+        <img src="/Progression-STI2D-2025/assets/itec.png" alt="diagramme stem" style="width: 400px; height: 300px;"/>
         </div>
 
 
@@ -40,7 +40,7 @@
     * Représentation virtuelle, dynamique, d’un produit physique dont il reproduit les caractéristiques essentielles
 
         <div style="display: flex; justify-content: center;">
-        <img src="/assets/jumeau.png" alt="diagramme stem" style="width: 800px; height: 500px;"/>
+        <img src="/Progression-STI2D-2025/assets/jumeau.png" alt="diagramme stem" style="width: 800px; height: 500px;"/>
         </div>
 
         * **Caractérisation des Produits sous l'Angle du Développement Durable**

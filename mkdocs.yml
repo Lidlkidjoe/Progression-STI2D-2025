@@ -1,5 +1,6 @@
 site_name: Progression STI2D
-site_url: http://localhost:8000/
+site_url: https://lidlkidjoe.github.io/Progression-STI2D-2025/
+
 theme:
   name: material
   language: fr
@@ -23,7 +24,7 @@ theme:
 
 nav:
   - STI2D: index.md
-  - Accueil:
+  - Bienvenue:
       - Accueil: accueil.md
       - Idées et faits importants: faits.md
       - Citations: citations.md
