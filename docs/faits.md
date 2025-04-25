@@ -6,7 +6,7 @@
      **IT/I2D** (Innovation technologique, Ingénierie et développement durable)
 
     * <u>Fusion en terminale :</u>  
-    2I2D (Ingénierie, Innovation, Développement Durable)  
+    **2I2D** Ingénierie, Innovation, Développement Durable  
 
     * <u>Spécification en terminale :</u>  
 
