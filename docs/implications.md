@@ -8,6 +8,7 @@ Le programme **STI2D** (Sciences et Technologies de l'Industrie et du Développe
 ## Une Approche Pédagogique Innovante
 
 Ce programme met l'accent sur :
+
 - **La démarche de projet** : Apprendre en concevant et en réalisant des projets concrets.
 - **L'expérimentation et la simulation** : Développer des compétences pratiques et analytiques.
 - **Une approche pluridisciplinaire** : Basée sur le triptyque **MEI** (*Matériaux, Énergie, Information*), favorisant une vision transversale des problématiques technologiques.
@@ -15,6 +16,7 @@ Ce programme met l'accent sur :
 ## Une Préparation aux Défis de Demain
 
 Grâce à cette formation, les élèves sont préparés à :
+  
 - Poursuivre des **études supérieures** dans des domaines variés tels que l'ingénierie et l'innovation.
 - S'adapter aux **défis technologiques et environnementaux contemporains**.
 
