@@ -31,7 +31,7 @@ nav:
       - Implications: implications.md
   - Première: premiere.md
   - Terminale: Terminale.md
-  - Ressources: essai.md
+  - Ressources: Ressources.md
 
 markdown_extensions:
   - markdown.extensions.abbr
