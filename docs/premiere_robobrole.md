@@ -62,7 +62,7 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
 
     * Comment réaliser un système pour frapper le palet ?
 
-    * **CO3.4 :** CO3.4. Identifier et caractériser des solutions techniques.
+    * **CO3.4 :** Identifier et caractériser des solutions techniques.
 
     <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/fiche dessin technique.pdf" width="100%" height="400px"></iframe>
 
