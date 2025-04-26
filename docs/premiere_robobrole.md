@@ -98,71 +98,87 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
 
         <div style="display: flex; justify-content: center; align-items: center; height: auto;">
             <video width="640" height="360" controls>
-                <source src="/Progression-STI2D-2025/assets/fichiers/robobrole/enregistrer_DXF.mp4" type="video/mp4">
+                <source src="/Progression-STI2D-2025/assets/fichiers/robobrole/enregistrer_DXF/enregistrer_DXF.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas l'élément vidéo.
             </video>
         </div>
 
 
-=== "Liaisons mécaniques"
+=== "Capteur ultrason"
 
-    * Comment analyser les interactions entre deux pièces ?
+    * Comment permettre à notre robot de s'arrêter ?
+    * **CO3.4 :** Identifier et caractériser des solutions techniques.
+    * Découverte du capteur ultrason
 
-    * **CO4.1 :** Décrire une idée, un principe, une solution, un projet en utilisant des outils de représentation adaptés
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/TP_Ultrason.pdf" width="100%" height="400px"></iframe>
 
-    * Situation déclenchante
+    * Exemple de lignes de code
 
-    <div style="display: flex; justify-content: center; align-items: center; height: auto;">
-        <video width="640" height="360" controls>
-            <source src="/Progression-STI2D-2025/assets/fichiers/bras/Crash_concord.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas l'élément vidéo.
-        </video>
-    </div>
+    ```cpp
+    #include "Ultrasonic.h"
 
-    * Introduction liaisons mécaniques
+    Ultrasonic ultrasonic(7);
 
-    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/Liaisons_mécaniques_introduction_e_v2.pdf" width="100%" height="400px"></iframe>
+    void setup() {
+      Serial.begin(9600);
+    }
 
-    * Logiciel pour s'entraîner
+    void loop() {
+      long RangeInCentimeters;
 
-    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/160-notice-schematrice.pdf" width="100%" height="400px"></iframe>
+      Serial.println("La distance de l'obstacle est : ");
+      RangeInCentimeters = ultrasonic.MeasureInCentimeters();
+      Serial.print(RangeInCentimeters); // 0~400cm
+      Serial.println(" cm");
+      delay(250);
+    }
+    ```
 
-    * Exercices
+=== "Moteur à courant continu"
 
-    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TP4 schema cinematique.pdf" width="100%" height="400px"></iframe>
+    * Comment gérer la vitesse de notre robot ?
+    * **CO3.4 :** Identifier et caractériser des solutions techniques.
+    * Notion de PWM (Pulse Width Modulation) Modulation de largeur d'impulsion
 
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/moteurs à courant continu.pdf" width="100%" height="400px"></iframe>
 
-=== "Impact environnemental bras"
+    * Exemple de lignes de code
 
-    * Comment anticiper l'impact environnemental d'un produit ?
+    ```cpp
+    void setup() {
+       pinMode(12, OUTPUT);
+    }
 
-    * **CO6.5 :** Interpréter les résultats d’une simulation et conclure sur la performance de la solution
+    void loop() {
+       digitalWrite(12, HIGH); // allume le moteur
+       delay(1000);
+       digitalWrite(12, LOW); // désactiver le moteur
+       delay(1000);
+    }
+    ```
 
-    * Assemblage du bras manipulateur
+=== "Servomoteur"
 
-    * [Notice bras manipulateur](https://www.instructables.com/MeArm-V11-Tiny-Open-Source-Robot-Arm/)
+    * Comment piloter un servomoteur ?
+    * **CO3.4 :** Identifier et caractériser des solutions techniques.
+    * Explications du servomoteur
 
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/servo-moteur.pdf" width="100%" height="400px"></iframe>
 
-    * Diagramme SysML
+    * Exemple de lignes de code
 
-    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/1_0 Diagramme SysMl.pdf" width="100%" height="400px"></iframe>
+    ```cpp
+    #include <Servo.h>  // on inclut la bibliothèque pour piloter un servomoteur
 
-    * Nomenclature
+    Servo monServo;     // on crée l'objet monServo
 
-    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/nomenclature.pdf" width="100%" height="400px"></iframe>
+    void setup() {
+        monServo.attach(9);   // on définit le Pin utilisé par le servomoteur
+        pinMode(13, OUTPUT);   // la Pin13 est mise en mode OUTPUT
+    }
 
-    * TP Sustainability en html
-
-
-    <div style="display: flex; justify-content: center;">
-    <img src="/Progression-STI2D-2025/assets/fichiers/bras/sustainability.png" alt="diagramme stem" style="width: 600px; height: 400px;"/>
-    </div>
-
-    * Document réponse
-
-    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TP7document reponse.pdf" width="100%" height="400px"></iframe>
-
-    * Programmation du bras manipulateur
-
-    <iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TD_Bras_robot.pdf" width="100%" height="400px"></iframe>
-    
+    void loop() {
+        monServo.write(0);      // on dit à l'objet de mettre le servo à 0°
+        monServo.write(180);    // on dit à l'objet de mettre le servo à 180°
+    }
+    ```

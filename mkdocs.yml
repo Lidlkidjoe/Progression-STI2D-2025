@@ -3,6 +3,8 @@ site_url: https://lidlkidjoe.github.io/Progression-STI2D-2025/
 
 theme:
   name: material
+  features:
+    - content.code.copy
   language: fr
   font:
     text: Raleway
@@ -44,3 +46,11 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.details
   - attr_list
+  - pymdownx.highlight:
+      linenums: true  # Active les numéros de ligne (facultatif)
+  - codehilite:
+      guess_lang: false  # Désactive la détection automatique du langage
+      linenums: true     # Active les numéros de ligne (facultatif)
+  - pymdownx.superfences
+  - pymdownx.highlight
+      
