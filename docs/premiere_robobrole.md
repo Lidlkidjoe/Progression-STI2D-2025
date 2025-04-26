@@ -70,6 +70,10 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
 
     <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/fiche rationalisation des choix.pdf" width="100%" height="400px"></iframe>
 
+    * Modélisation du système de frappe
+
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/modélisation d'un Shoot.pdf" width="100%" height="400px"></iframe>
+
     * Exemple de systèmes de frappe
 
     * Il est important de faire preuve d'imagination pour adapter les propositions à vos besoins.
@@ -87,6 +91,10 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
                 Votre navigateur ne supporte pas l'élément vidéo.
             </video>
         </div>
+
+        * Modélisation lame élastique 
+
+        <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/modélisation d'un système de frappe.pdf" width="100%" height="400px"></iframe>
 
         * **Moteur à courant continu** 
 
@@ -182,3 +190,48 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
         monServo.write(180);    // on dit à l'objet de mettre le servo à 180°
     }
     ```
+
+=== "Cinématique"
+
+    * Introduction à la cinématique
+
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/Cours-cinematique_e.pdf" width="100%" height="400px"></iframe>
+
+
+=== "Frottement"
+
+    Comment évaluer les efforts qui agissent sur notre palet ?
+
+    * **CO 7.5** Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures et/ou d’observations sur le prototype ou la maquette, interpréter les résultats et qualifier le produit.
+
+    * Situation déclenchante
+
+        <div style="display: flex; justify-content: center; align-items: center; height: auto;">
+            <video width="640" height="360" controls>
+                <source src="/Progression-STI2D-2025/assets/fichiers/robobrole/Tp première équilibre.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas l'élément vidéo.
+            </video>
+        </div>
+
+    * Introduction au frottement (TP)
+
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/TP-frottement_e.pdf" width="100%" height="400px"></iframe>
+
+    <div style="display: flex; justify-content: center; align-items: center; height: auto;">
+        <video width="640" height="360" controls>
+            <source src="/Progression-STI2D-2025/assets/fichiers/robobrole/Tp_frottements_2025.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas l'élément vidéo.
+        </video>
+    </div>
+
+    * Synthèse tp
+
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/Synthèse tp frottement_e.pdf" width="100%" height="400px"></iframe>
+
+    * Notion de frottement
+
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/Cours-frottement_e.pdf" width="100%" height="400px"></iframe>
+
+    * Exercices : frottement
+
+    <iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/TD-frottement_e.pdf" width="100%" height="400px"></iframe>
