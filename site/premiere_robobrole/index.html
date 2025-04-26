@@ -691,7 +691,7 @@
 Les élèves font appel à des connaissances travaillées plus tôt dans la progression.<br />
 Ils complètent également leurs connaissances grâce à l'approche projet.<br />
 Les enseignements sont articulés en réponse aux problématiques que le CDC soulève.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Cahier des charges</label><label for="__tabbed_1_2">Pilotage robot</label><label for="__tabbed_1_3">Gestion de projet</label><label for="__tabbed_1_4">Système de frappe</label><label for="__tabbed_1_5">Liaisons mécaniques</label><label for="__tabbed_1_6">Impact environnemental bras</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:7"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Cahier des charges</label><label for="__tabbed_1_2">Pilotage robot</label><label for="__tabbed_1_3">Gestion de projet</label><label for="__tabbed_1_4">Système de frappe</label><label for="__tabbed_1_5">Capteur ultrason</label><label for="__tabbed_1_6">Moteur à courant continu</label><label for="__tabbed_1_7">Servomoteur</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
@@ -795,7 +795,7 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
 </ul>
 <p><div style="display: flex; justify-content: center; align-items: center; height: auto;">
     <video width="640" height="360" controls>
-        <source src="/Progression-STI2D-2025/assets/fichiers/robobrole/enregistrer_DXF.mp4" type="video/mp4">
+        <source src="/Progression-STI2D-2025/assets/fichiers/robobrole/enregistrer_DXF/enregistrer_DXF.mp4" type="video/mp4">
         Votre navigateur ne supporte pas l'élément vidéo.
     </video>
 </div></p>
@@ -804,72 +804,116 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
 </div>
 <div class="tabbed-block">
 <ul>
-<li>
-<p>Comment analyser les interactions entre deux pièces ?</p>
-</li>
-<li>
-<p><strong>CO4.1 :</strong> Décrire une idée, un principe, une solution, un projet en utilisant des outils de représentation adaptés</p>
-</li>
-<li>
-<p>Situation déclenchante</p>
-</li>
+<li>Comment permettre à notre robot de s'arrêter ?</li>
+<li><strong>CO3.4 :</strong> Identifier et caractériser des solutions techniques.</li>
+<li>Découverte du capteur ultrason</li>
 </ul>
-<p><div style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <video width="640" height="360" controls>
-        <source src="/Progression-STI2D-2025/assets/fichiers/bras/Crash_concord.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas l'élément vidéo.
-    </video>
-</div></p>
+<p><iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/TP_Ultrason.pdf" width="100%" height="400px"></iframe></p>
 <ul>
-<li>Introduction liaisons mécaniques</li>
+<li>Exemple de lignes de code</li>
 </ul>
-<p><iframe src="/Progression-STI2D-2025/assets/fichiers/bras/Liaisons_mécaniques_introduction_e_v2.pdf" width="100%" height="400px"></iframe></p>
-<ul>
-<li>Logiciel pour s'entraîner</li>
-</ul>
-<p><iframe src="/Progression-STI2D-2025/assets/fichiers/bras/160-notice-schematrice.pdf" width="100%" height="400px"></iframe></p>
-<ul>
-<li>Exercices</li>
-</ul>
-<p><iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TP4 schema cinematique.pdf" width="100%" height="400px"></iframe></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Ultrasonic.h&quot;</span>
+
+<span class="n">Ultrasonic</span><span class="w"> </span><span class="nf">ultrasonic</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">long</span><span class="w"> </span><span class="n">RangeInCentimeters</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;La distance de l&#39;obstacle est : &quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">RangeInCentimeters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ultrasonic</span><span class="p">.</span><span class="n">MeasureInCentimeters</span><span class="p">();</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">RangeInCentimeters</span><span class="p">);</span><span class="w"> </span><span class="c1">// 0~400cm</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot; cm&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
 <ul>
-<li>
-<p>Comment anticiper l'impact environnemental d'un produit ?</p>
-</li>
-<li>
-<p><strong>CO6.5 :</strong> Interpréter les résultats d’une simulation et conclure sur la performance de la solution</p>
-</li>
-<li>
-<p>Assemblage du bras manipulateur</p>
-</li>
-<li>
-<p><a href="https://www.instructables.com/MeArm-V11-Tiny-Open-Source-Robot-Arm/">Notice bras manipulateur</a></p>
-</li>
-<li>
-<p>Diagramme SysML</p>
-</li>
+<li>Comment gérer la vitesse de notre robot ?</li>
+<li><strong>CO3.4 :</strong> Identifier et caractériser des solutions techniques.</li>
+<li>Notion de PWM (Pulse Width Modulation) Modulation de largeur d'impulsion</li>
 </ul>
-<p><iframe src="/Progression-STI2D-2025/assets/fichiers/bras/1_0 Diagramme SysMl.pdf" width="100%" height="400px"></iframe></p>
+<p><iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/moteurs à courant continu.pdf" width="100%" height="400px"></iframe></p>
 <ul>
-<li>Nomenclature</li>
+<li>Exemple de lignes de code</li>
 </ul>
-<p><iframe src="/Progression-STI2D-2025/assets/fichiers/bras/nomenclature.pdf" width="100%" height="400px"></iframe></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// allume le moteur</span>
+<span class="w">   </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="w">   </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"> </span><span class="c1">// désactiver le moteur</span>
+<span class="w">   </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
 <ul>
-<li>TP Sustainability en html</li>
+<li>Comment piloter un servomoteur ?</li>
+<li><strong>CO3.4 :</strong> Identifier et caractériser des solutions techniques.</li>
+<li>Explications du servomoteur</li>
 </ul>
-<p><div style="display: flex; justify-content: center;">
-<img src="/Progression-STI2D-2025/assets/fichiers/bras/sustainability.png" alt="diagramme stem" style="width: 600px; height: 400px;"/>
-</div></p>
+<p><iframe src="/Progression-STI2D-2025/assets/fichiers/robobrole/servo-moteur.pdf" width="100%" height="400px"></iframe></p>
 <ul>
-<li>Document réponse</li>
+<li>Exemple de lignes de code</li>
 </ul>
-<p><iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TP7document reponse.pdf" width="100%" height="400px"></iframe></p>
-<ul>
-<li>Programmation du bras manipulateur</li>
-</ul>
-<p><iframe src="/Progression-STI2D-2025/assets/fichiers/bras/TD_Bras_robot.pdf" width="100%" height="400px"></iframe></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servo.h&gt;</span><span class="c1">  // on inclut la bibliothèque pour piloter un servomoteur</span>
+
+<span class="n">Servo</span><span class="w"> </span><span class="n">monServo</span><span class="p">;</span><span class="w">     </span><span class="c1">// on crée l&#39;objet monServo</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">monServo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span><span class="w">   </span><span class="c1">// on définit le Pin utilisé par le servomoteur</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">   </span><span class="c1">// la Pin13 est mise en mode OUTPUT</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">monServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w">      </span><span class="c1">// on dit à l&#39;objet de mettre le servo à 0°</span>
+<span class="w">    </span><span class="n">monServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">180</span><span class="p">);</span><span class="w">    </span><span class="c1">// on dit à l&#39;objet de mettre le servo à 180°</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
@@ -921,7 +965,7 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
