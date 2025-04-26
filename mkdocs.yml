@@ -29,11 +29,12 @@ nav:
       - Idées et faits importants: faits.md
       - Citations: citations.md
       - Implications: implications.md
-  - Première: premiere.md
-      - Maison positive: premiere_maison.md
-      - Bras manipulateur: premiere_bras.md
-      - Robobrole: premiere_robobrole.md
-      - Mobilité: premiere_mobilite.md
+  - Première:
+    - Introduction: premiere.md
+    - Maison positive: premiere_maison.md
+    - Bras manipulateur: premiere_bras.md
+    - Robobrole: premiere_robobrole.md
+    - Mobilité: premiere_mobilite.md
   - Terminale: Terminale.md
   - Ressources: Ressources.md
 
