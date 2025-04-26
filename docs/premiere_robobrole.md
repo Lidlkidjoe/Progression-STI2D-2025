@@ -76,7 +76,7 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
 
         * **Bielle manivelle**
 
-        ![bielle manivelle](https://1.bp.blogspot.com/-wEKU14QB9BM/WVQl41WDlUI/AAAAAAAACP4/KvkeVsvQmec77JsKXsZAh18GmrAfNv-GgCKgBGAs/s1600/biela2.gif)
+            ![bielle manivelle](https://1.bp.blogspot.com/-wEKU14QB9BM/WVQl41WDlUI/AAAAAAAACP4/KvkeVsvQmec77JsKXsZAh18GmrAfNv-GgCKgBGAs/s1600/biela2.gif)
 
         * **Lame élastique**
 
@@ -92,6 +92,15 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
 
         <div style="display: flex; justify-content: center;">
         <img src="/Progression-STI2D-2025/assets/fichiers/robobrole/aube.png" alt="diagramme stem" style="width: 400px; height: 300px;"/>
+        </div>
+
+        * Enregistrer un DXF pour découpe laser
+
+        <div style="display: flex; justify-content: center; align-items: center; height: auto;">
+            <video width="640" height="360" controls>
+                <source src="/Progression-STI2D-2025/assets/fichiers/robobrole/enregistrer_DXF.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas l'élément vidéo.
+            </video>
         </div>
 
 
