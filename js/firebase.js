@@ -16,6 +16,21 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const userId = "user1";
 
+async function checkPassword(inputPassword) {
+    try {
+      const snapshot = await get(ref(db, 'admin/password'));
+      if (snapshot.exists()) {
+        const correctPassword = snapshot.val();
+        // Comparaison simple (pour une vraie sécurité, il faudrait utiliser un hash)
+        return inputPassword === correctPassword;
+      }
+      return false;
+    } catch (error) {
+      console.error("Erreur de vérification:", error);
+      return false;
+    }
+  }
+
 // Fonction pour normaliser les IDs (corrige le problème des caractères interdits)
 function normalizeId(id) {
   return id.replace(/[.#$/[\]]/g, '_');
@@ -100,16 +115,31 @@ function toggleCheckboxes(enable) {
 
 // Configuration du bouton d'édition
 function setupEditToggle() {
-  const toggleBtn = document.getElementById('toggleEdit');
-  if (!toggleBtn) return;
-
-  toggleBtn.addEventListener('click', () => {
-    editMode = !editMode; // Inverse l'état
-    toggleCheckboxes(editMode);
-    toggleBtn.textContent = editMode ? "🔒 Bloquer l'édition" : "✏️ Autoriser l'édition";
-    showStatus(editMode ? "Mode édition activé" : "Mode édition désactivé");
-  });
-}
+    const toggleBtn = document.getElementById('toggleEdit');
+    if (!toggleBtn) return;
+  
+    toggleBtn.addEventListener('click', async () => {
+      if (!editMode) {
+        // Mode édition - demande du mot de passe
+        const password = prompt("Entrez le mot de passe pour éditer:");
+        
+        if (password && await checkPassword(password)) {
+          editMode = true;
+          toggleCheckboxes(editMode);
+          toggleBtn.textContent = "🔒 Bloquer l'édition";
+          showStatus("Mode édition activé");
+        } else {
+          showStatus("⚠️ Mot de passe incorrect", true);
+        }
+      } else {
+        // Désactivation de l'édition
+        editMode = false;
+        toggleCheckboxes(editMode);
+        toggleBtn.textContent = "✏️ Autoriser l'édition";
+        showStatus("Mode édition désactivé");
+      }
+    });
+  }
 
 // Initialisation au chargement du DOM
 document.addEventListener('DOMContentLoaded', () => {
