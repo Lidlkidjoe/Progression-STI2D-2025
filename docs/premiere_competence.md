@@ -1,5 +1,21 @@
 # Compétences de la progression de première
 
+<!-- Bouton d'activation de l'édition -->
+<button id="toggleEdit" style="
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+">
+✏️ Autoriser l'édition
+</button>
+
 <table border="1">
   <thead>
     <tr>
@@ -32,7 +48,5 @@
     </tr>
   </tbody>
 </table>
-
-<button id="save">Enregistrer</button>
 
 <script type="module" src="../js/firebase.js"></script>

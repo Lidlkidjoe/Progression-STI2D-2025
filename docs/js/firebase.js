@@ -89,6 +89,28 @@ function showStatus(message, isError = false) {
   }, 3000);
 }
 
+let editMode = false; // Variable globale pour suivre l'état
+
+// Fonction pour activer/désactiver les cases
+function toggleCheckboxes(enable) {
+  document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    checkbox.disabled = !enable;
+  });
+}
+
+// Configuration du bouton d'édition
+function setupEditToggle() {
+  const toggleBtn = document.getElementById('toggleEdit');
+  if (!toggleBtn) return;
+
+  toggleBtn.addEventListener('click', () => {
+    editMode = !editMode; // Inverse l'état
+    toggleCheckboxes(editMode);
+    toggleBtn.textContent = editMode ? "🔒 Bloquer l'édition" : "✏️ Autoriser l'édition";
+    showStatus(editMode ? "Mode édition activé" : "Mode édition désactivé");
+  });
+}
+
 // Initialisation au chargement du DOM
 document.addEventListener('DOMContentLoaded', () => {
   // Vérification que la page contient des checkboxes
@@ -101,10 +123,16 @@ document.addEventListener('DOMContentLoaded', () => {
       saveButton.addEventListener('click', saveState);
     }
     
-    // Sauvegarde automatique
-    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-      checkbox.addEventListener('change', saveState);
+  // 3. NOUVEAU : Gestion de l'édition (à ajouter APRÈS les écouteurs existants)
+  setupEditToggle(); // Active le bouton toggleEdit
+  toggleCheckboxes(false); // Désactive les cases par défaut
+
+  // 4. Sauvegarde automatique (MODIFIÉE pour ne sauver QUE si editMode = true)
+  document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      if (editMode) saveState(); // Sauvegarde uniquement en mode édition
     });
+  });
     
     showStatus('Système prêt !');
   }
