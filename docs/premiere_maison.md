@@ -148,7 +148,7 @@
 
     * Quelle hypothèse faire pour analyser l'ensolieillement  ?
 
-    * **CO7.2 :** est explicitement définie dans les sources comme étant : "Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures.
+    * **CO7.2 :**  Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures.
 
     * Protocole de mesure
 
@@ -175,7 +175,7 @@
 
     * Comment optimiser le rendement d'un panneau solaire  ?
 
-    * **CO7.2 :** est explicitement définie dans les sources comme étant : "Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures.
+    * **CO7.2 :**  Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures.
 
     * Chaîne d'information
 
@@ -197,7 +197,7 @@
 
     * Comment réduire l'impact de la production de produits  ?
 
-    * **CO7.2 :** est explicitement définie dans les sources comme étant : "Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures.
+    * **CO7.2 :**  Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures.
 
     * Initiation par le jeu
 
