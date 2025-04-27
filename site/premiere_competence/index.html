@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://lidlkidjoe.github.io/Progression-STI2D-2025/Terminale/">
+        <link rel="canonical" href="https://lidlkidjoe.github.io/Progression-STI2D-2025/premiere_competence/">
       
       
-        <link rel="prev" href="../premiere_competence/">
+        <link rel="prev" href="../premiere_mobilite/">
       
       
-        <link rel="next" href="../Ressources/">
+        <link rel="next" href="../Terminale/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Terminale - Progression STI2D</title>
+        <title>Compétences - Progression STI2D</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#terminale" class="md-skip">
+        <a href="#competences-de-la-progression-de-premiere" class="md-skip">
           Aller au contenu
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Terminale
+              Compétences
             
           </span>
         </div>
@@ -386,18 +386,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -413,7 +415,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Première
@@ -539,36 +541,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../premiere_competence/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Compétences
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -586,13 +558,43 @@
   
   
   <span class="md-ellipsis">
-    Terminale
+    Compétences
     
   </span>
   
 
       </a>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terminale
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -653,11 +655,77 @@
 
 
 
-<h1 id="terminale">Terminale</h1>
-<details>
-<summary>Exercices</summary>
-<p>P = m*g</p>
-</details>
+<script src="competence.js"></script>
+
+<h1 id="competences-de-la-progression-de-premiere">Compétences de la progression de première</h1>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Objectif formation</th>
+      <th>Compétences</th>
+      <th>Vu 1</th>
+      <th>Vu 2</th>
+      <th>Vu 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><strong>O1 - Caractériser des produits ou des constituants privilégiant un usage raisonné du point de vue développement durable.</strong></td>
+      <td>CO1.1. Justifier les choix des structures matérielles et/ou logicielles d’un produit, identifier les flux mis en œuvre dans une approche de développement durable.</td>
+      <td><input type="checkbox" id="o1-co1.1-vu1"></td>
+      <td><input type="checkbox" id="o1-co1.1-vu2"></td>
+      <td><input type="checkbox" id="o1-co1.1-vu3"></td>
+    </tr>
+    <tr>
+      <td>CO1.2. Justifier le choix d’une solution selon des contraintes d’ergonomie et de design.</td>
+      <td><input type="checkbox" id="o1-co1.2-vu1"></td>
+      <td><input type="checkbox" id="o1-co1.2-vu2"></td>
+      <td><input type="checkbox" id="o1-co1.2-vu3"></td>
+    </tr>
+    <tr>
+      <td>CO1.3. Justifier les solutions constructives d’un produit au regard des performances environnementales et estimer leur impact sur l’efficacité globale.</td>
+      <td><input type="checkbox" id="o1-co1.3-vu1"></td>
+      <td><input type="checkbox" id="o1-co1.3-vu2"></td>
+      <td><input type="checkbox" id="o1-co1.3-vu3"></td>
+    </tr>
+    <!-- Ajoutez d'autres lignes ici pour les autres objectifs et compétences -->
+  </tbody>
+</table>
+
+<p><button id="save">Enregistrer</button></p>
+<script>
+  // Charger l'état des cases à cocher depuis le serveur
+  fetch('load_state.php')
+    .then(response => response.json())
+    .then(data => {
+      document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+        const id = checkbox.id;
+        if (data[id] !== undefined) {
+          checkbox.checked = data[id];
+        }
+      });
+    });
+
+  // Sauvegarder l'état des cases à cocher sur le serveur
+  document.getElementById('save').addEventListener('click', () => {
+    const state = {};
+    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+      state[checkbox.id] = checkbox.checked;
+    });
+
+    fetch('save_state.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(state),
+    })
+      .then(response => response.text())
+      .then(data => {
+        alert('État sauvegardé sur le serveur !');
+      });
+  });
+</script>
 
 
 
