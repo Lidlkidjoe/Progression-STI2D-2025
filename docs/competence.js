@@ -1,5 +1,5 @@
 // Charger l'état depuis Firebase
-fetch('load_state.php')
+fetch('/load_state.php')
   .then(response => response.json())
   .then(data => {
     document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
@@ -17,7 +17,7 @@ document.getElementById('save').addEventListener('click', () => {
     state[checkbox.id] = checkbox.checked;
   });
 
-  fetch('save_state.php', {
+  fetch('/save_state.php', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(state),
