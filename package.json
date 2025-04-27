@@ -1,0 +1,32 @@
+{
+  "name": "sauvegarde_donnees",
+  "version": "1.0.0",
+  "description": "sauvegarde des compétences",
+  "main": "sauvegarde.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node sauvegarde.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lidlkidjoe/Progression-STI2D-2025.git"
+  },
+  "keywords": [
+    "sauvergarde",
+    "compétences",
+    "firebase",
+    "données"
+  ],
+  "type":"module",
+  "author": "xavier frassinelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lidlkidjoe/Progression-STI2D-2025/issues"
+  },
+  "homepage": "https://github.com/Lidlkidjoe/Progression-STI2D-2025#readme",
+  "dependencies": {
+    "firebase": "^11.6.1"
+  }
+}
