@@ -18,7 +18,7 @@ const userId = "user1";
 
 async function checkPassword(inputPassword) {
     try {
-      const snapshot = await get(ref(db, 'admin/password'));
+      const snapshot = await get(ref(db, 'states/admin/password'));
       if (snapshot.exists()) {
         const correctPassword = snapshot.val();
         // Comparaison simple (pour une vraie sécurité, il faudrait utiliser un hash)
