@@ -1,5 +1,62 @@
-<script src="competence.js"></script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+  import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
 
+// Configuration de Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyDATwNCN9VWgLz80ib0b99iBbjMt8-iduM",
+  authDomain: "sauvegarde-donnees-9dd15.firebaseapp.com",
+  databaseURL: "https://sauvegarde-donnees-9dd15-default-rtdb.europe-west1.firebasedatabase.app/",
+  projectId: "sauvegarde-donnees-9dd15",
+  storageBucket: "sauvegarde-donnees-9dd15.appspot.com",
+  messagingSenderId: "847875027342",
+  appId: "1:847875027342:web:1af2f608ebd86184d234df"
+};
+
+  // Initialiser Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  const userId = "user1"; // tu peux rendre ça dynamique si tu veux plus tard
+
+  // Charger l'état des cases à cocher
+  async function loadState() {
+    try {
+      const snapshot = await get(ref(db, `states/${userId}`));
+      if (snapshot.exists()) {
+        const data = snapshot.val();
+        document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+          const id = checkbox.id;
+          if (data[id] !== undefined) {
+            checkbox.checked = data[id];
+          }
+        });
+      }
+    } catch (error) {
+      console.error("Erreur lors du chargement des états :", error);
+    }
+  }
+
+  // Sauvegarder l'état des cases à cocher
+  async function saveState() {
+    const state = {};
+    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+      state[checkbox.id] = checkbox.checked;
+    });
+
+    try {
+      await set(ref(db, `states/${userId}`), state);
+      alert('État sauvegardé avec succès !');
+    } catch (error) {
+      console.error("Erreur lors de la sauvegarde :", error);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('save').addEventListener('click', saveState);
+    loadState();
+  });
+</script>
 
 # Compétences de la progression de première
 
@@ -33,42 +90,7 @@
       <td><input type="checkbox" id="o1-co1.3-vu2"></td>
       <td><input type="checkbox" id="o1-co1.3-vu3"></td>
     </tr>
-    <!-- Ajoutez d'autres lignes ici pour les autres objectifs et compétences -->
   </tbody>
 </table>
 
 <button id="save">Enregistrer</button>
-
-<script>
-  // Charger l'état des cases à cocher depuis le serveur
-  fetch('load_state.php')
-    .then(response => response.json())
-    .then(data => {
-      document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
-        const id = checkbox.id;
-        if (data[id] !== undefined) {
-          checkbox.checked = data[id];
-        }
-      });
-    });
-
-  // Sauvegarder l'état des cases à cocher sur le serveur
-  document.getElementById('save').addEventListener('click', () => {
-    const state = {};
-    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
-      state[checkbox.id] = checkbox.checked;
-    });
-
-    fetch('save_state.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(state),
-    })
-      .then(response => response.text())
-      .then(data => {
-        alert('État sauvegardé sur le serveur !');
-      });
-  });
-</script>
