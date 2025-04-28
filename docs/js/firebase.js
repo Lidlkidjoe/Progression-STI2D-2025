@@ -92,7 +92,7 @@ let editMode = false;
 // Fonction pour vérifier le mot de passe
 async function checkPassword(inputPassword) {
   try {
-    const snapshot = await get(ref(db, 'states/admin/password'));
+    const snapshot = await get(ref(db, 'states/password'));
     if (snapshot.exists()) {
       const correctPassword = snapshot.val();
       return inputPassword === correctPassword; // Comparaison simple
@@ -176,9 +176,12 @@ function saveStateToFirebase() {
   });
 
   const userId = auth.currentUser.uid; // Remplacez par un identifiant utilisateur si nécessaire
+  console.log("UID utilisateur :", userId);
+  console.log("Données à sauvegarder :", state);
   const stateRef = ref(db, `states/${userId}`);
   set(stateRef, state)
     .then(() => {
+      console.log("Données sauvegardées avec succès :", state);
       showStatus("État sauvegardé dans Firebase !");
     })
     .catch(error => {
@@ -228,26 +231,31 @@ function setupCheckboxListeners() {
 document.addEventListener('DOMContentLoaded', () => {
   setupEditToggle();
   toggleCheckboxes(false); // Désactive les cases par défaut
-  loadStateFromFirebase(); // Charge l'état depuis Firebase
   setupCheckboxListeners(); // Configure les écouteurs pour sauvegarder automatiquement
   showStatus('Système prêt !');
 
-  // Vérification de l'état de connexion
-  onAuthStateChanged(auth, (user) => {
-    const protectedContent = document.getElementById("protectedContent");
-    if (!protectedContent) {
-      console.error("L'élément #protectedContent est introuvable dans le DOM.");
-      return;
-    }
+// Vérification de l'état de connexion
+onAuthStateChanged(auth, (user) => {
+  const protectedContent = document.getElementById("protectedContent");
+  const logoutButton = document.getElementById("logoutButton");
 
-    if (user) {
-      console.log("Utilisateur connecté :", user);
-      protectedContent.style.display = "block"; // Affiche le contenu protégé
-    } else {
-      console.log("Aucun utilisateur connecté.");
-      protectedContent.style.display = "none"; // Masque le contenu protégé
-    }
-  });
+  if (!protectedContent || !logoutButton) {
+    console.error("Éléments protégés introuvables dans le DOM.");
+    return;
+  }
+
+  if (user) {
+    console.log("Utilisateur connecté :", user);
+    protectedContent.style.display = "block"; // Affiche le contenu protégé
+    logoutButton.style.display = "inline-block"; // Affiche le bouton de déconnexion
+    loadStateFromFirebase (); // Charge l'état depuis Firebase
+
+  } else {
+    console.log("Aucun utilisateur connecté.");
+    protectedContent.style.display = "none"; // Masque le contenu protégé
+    logoutButton.style.display = "none"; // Masque le bouton de déconnexion
+  }
+});
 });
 
 // Rendre la fonction accessible globalement

@@ -188,6 +188,14 @@ function saveStateToFirebase() {
 }
 
 function loadStateFromFirebase() {
+
+  if (!auth.currentUser) {
+    console.error("Aucun utilisateur connecté. Impossible de charger l'état.");
+    showStatus("Veuillez vous connecter pour charger l'état.", true);
+    return;
+  }
+
+
   const userId = auth.currentUser.uid; // Remplacez par un identifiant utilisateur si nécessaire
   const stateRef = ref(db, `states/${userId}`);
   get(stateRef)
