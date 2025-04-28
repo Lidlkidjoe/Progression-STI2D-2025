@@ -33,7 +33,7 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transition: background 0.3s;
 " onclick="loginWithGitHub()">
-🔑 Connexion avec GitHub
+🔑 Connexion
 </button>
 
 <button id="logoutButton" style="
