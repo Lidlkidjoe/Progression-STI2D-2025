@@ -656,6 +656,11 @@
 
 
 <h1 id="competences-de-la-progression-de-premiere">Compétences de la progression de première</h1>
+<div id="protectedContent" style="display: none;">
+  <!-- Contenu protégé -->
+  <h2>Bienvenue sur la page des compétences !</h2>
+</div>
+
 <!-- Bouton d'activation de l'édition -->
 <p><button id="toggleEdit" style="
   padding: 10px 20px;
@@ -671,6 +676,37 @@
 ">
 ✏️ Autoriser l'édition
 </button></p>
+<p><button id="githubLogin" style="
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+" onclick="loginWithGitHub()">
+🔑 Connexion avec GitHub
+</button></p>
+<p><button id="logoutButton" style="
+  padding: 10px 20px;
+  background: #FF4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+  display: none; /* Masqué par défaut */
+">
+🔒 Déconnexion
+</button></p>
+<script type="module" src="../js/firebase.js"></script>
+
 <table border="1">
   <thead>
     <tr>
@@ -872,8 +908,6 @@
     </tr>
       </tbody>
 </table>
-
-<script type="module" src="../js/firebase.js"></script>
 
 
 
